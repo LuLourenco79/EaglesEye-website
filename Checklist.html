@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eagle Eye Sports Cards Inc. Website</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo-group">
+        <a href="index.html" class="logo-link">
+          <img src="Images/EagleEyeLogo.png" alt="KrazyKardz Logo" class="logo-img" />
+          <span class="logo-text">Eagle Eye Sports Cards Inc.</span>
+        </a>
+      </div>
+
+      <nav class="nav-links">
+        <a href="Checklist.html">Checklist</a>
+        <a href="FAQs.html">FAQs</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="Cart.html">Cart</a>
+      </nav>
+
+      <div class="off-screen-menu">
+        <ul>
+          <li><a href="Checklist.html">Checklist</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          <li><a href="Cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div>
+      <h1 class="slogan">Checklist</h1>
+  </div>
+  
+  <main class="checklist-container">
+    <h1 class="checklist-title">Checklist</h1>
+    <h2 class="checklist-subtitle">Gem</h2>
+
+    <div class="actions">
+      <button id="printBtn" class="btn">Export this page as PDF</button>
+    </div>
+
+    <ul id="checklist" class="checklist-list"></ul>
+    <p id="status" class="status"></p>
+  </main>
+
+<script src="https://unpkg.com/pdfjs-dist@4.4.168/build/pdf.min.js" crossorigin="anonymous" defer></script>
+<script src="script.js" defer></script>
+</body>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="/" class="footer-brand" aria-label="Eagle Eye Sports Cards Inc. home">Eagle Eye Sports Cards Inc.</a>
+
+    <nav class="social-links" aria-label="Social media">
+      <a
+        href="https://www.instagram.com/krazykardrepacks?igsh=d2E2em41ZGR4M21o&utm_source=qr"
+        class="social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+      >
+        <img src="Images/InstaLogo.webp" alt="Instagram" />
+      </a>
+
+     <a href="mailto:Krazysportsandcollectibles@gmail.com" class="email">
+      Krazysportsandcollectibles@gmail.com
+    </a>
+    </nav>
+
+    <small class="footer-copy">
+      © <span id="year"></span> Eagle Eye Sports Cards Inc. All rights reserved.
+    </small>
+  </div>
+</footer>
+
+</html>

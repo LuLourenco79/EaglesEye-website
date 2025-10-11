@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eagle Eye Sports Cards Inc. Website</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo-group">
+                <a href="index.html" class="logo-link">
+                    <img src="Images/EagleEyeLogo.png" alt="KrazyKardz Logo" class="logo-img" />
+                    <span class="logo-text">Eagle Eye Sports Cards Inc.</span>
+                </a>
+            </div>
+
+            <nav class="nav-links">
+                <a href="Checklist.html">Checklist</a>
+                <a href="FAQs.html">FAQs</a>
+                <a href="ContactUs.html">Contact Us</a>
+                <a href="Cart.html">Cart</a>
+            </nav>
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="Checklist.html">Checklist</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <nav>
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <div class="intropage">
+            <h1 class="slogan">Eagle Eye Sports Cards Inc.</h1>
+        </div>
+    
+        <div id="products" class="listing">
+            <h2>Products:</h2>
+            <ul class="listing-container">
+                <li>
+                    <p class="soldout-label">Sold Out</p>
+                    <div class="soldoutbox-alert">
+                      <img src="Images/gemrush.jpeg" alt="Krazy Gem Rush box" class="listingitem-img"/>
+                      <div class="hover-text">Sold Out</div>
+                    </div>
+                    <p class="listingitem-name">Krazy Gem Rush</p>
+                    <p class="listingitem-price">$275</p>
+                    <button class="listingitem-btn"></button>
+                </li>
+                <li>
+                    <p class="soldout-label">Sold Out</p>
+                    <div class="soldoutbox-alert">
+                      <img src="Images/krazytown.jpeg" alt="Krazytown box" class="listingitem-img"/>
+                      <div class="hover-text">Sold Out</div>
+                    </div>
+                    <p class="listingitem-name">Krazy Kaboom Town Blast</p>
+                    <p class="listingitem-price">$450</p>
+                    <button class="listingitem-btn"></button>
+                </li>
+                <li>
+                    <p class="soldout-label">Sold Out</p>
+                    <div class="soldoutbox-alert">
+                      <img src="Images/krazykards.jpeg" alt="KrazyKards box" class="listingitem-img"/>
+                      <div class="hover-text">Sold Out</div>
+                    </div>
+                    <p class="listingitem-name">Krazy Kards</p>
+                    <p class="listingitem-price">$350</p>
+                    <button class="listingitem-btn"></button>
+                </li>
+                <li>
+                    <p class="soldout-label">Sold Out</p>
+                    <div class="soldoutbox-alert">
+                      <img src="Images/krazygem.jpeg" alt="Krazy Gem box" class="listingitem-img"/>
+                      <div class="hover-text">Sold Out</div>
+                    </div>
+                    <p class="listingitem-name">Krazy Gem</p>
+                    <p class="listingitem-price">$230</p>
+                    <button class="listingitem-btn"></button>   
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="/" class="footer-brand" aria-label="Eagle Eye Sports Cards Inc. home">Eagle Eye Sports Cards Inc.</a>
+
+    <nav class="social-links" aria-label="Social media">
+      <a
+        href="https://www.instagram.com/krazykardrepacks?igsh=d2E2em41ZGR4M21o&utm_source=qr"
+        class="social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+      >
+        <img src="Images/InstaLogo.webp" alt="Instagram" />
+      </a>
+
+     <a href="mailto:Krazysportsandcollectibles@gmail.com" class="email">
+      Krazysportsandcollectibles@gmail.com
+    </a>
+    </nav>
+
+    <small class="footer-copy">
+      © <span id="year"></span> Eagle Eye Sports Cards Inc. All rights reserved.
+    </small>
+  </div>
+</footer>
+
+</html>
