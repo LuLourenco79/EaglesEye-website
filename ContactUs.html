@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eagle Eye Sports Cards Inc. Website</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo-group">
+        <a href="index.html" class="logo-link">
+          <img src="Images/EagleEyeLogo.png" alt="KrazyKardz Logo" class="logo-img" />
+          <span class="logo-text">Eagle Eye Sports Cards Inc.</span>
+        </a>
+      </div>
+
+      <nav class="nav-links">
+        <a href="Checklist.html">Checklist</a>
+        <a href="FAQs.html">FAQs</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="Cart.html">Cart</a>
+      </nav>
+
+      <div class="off-screen-menu">
+        <ul>
+          <li><a href="Checklist.html">Checklist</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          <li><a href="Cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<main id="contact" class="contact-section" role="main">
+  <div class="contact-container">
+
+    <header class="contact-header">
+      <h1 class="contact-title">Contact Us</h1>
+      <p class="contact-subtitle">We’ll get back to you within 1–2 business days.</p>
+    </header>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <!-- Honeypot (spam trap) -->
+      <input type="text" name="website" class="contact-hp" autocomplete="off" tabindex="-1" aria-hidden="true" />
+
+      <div class="contact-row">
+        <div class="contact-field">
+          <label for="firstName" class="contact-label">First name</label>
+          <input id="firstName" name="firstName" type="text" class="contact-input" required />
+          <p class="contact-hint">Required</p>
+        </div>
+
+        <div class="contact-field">
+          <label for="lastName" class="contact-label">Last name</label>
+          <input id="lastName" name="lastName" type="text" class="contact-input" required />
+          <p class="contact-hint">Required</p>
+        </div>
+      </div>
+
+      <div class="contact-field">
+        <label for="email" class="contact-label">Contact email</label>
+        <input id="email" name="email" type="email" class="contact-input" required
+               inputmode="email" autocomplete="email"
+               pattern="^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$" />
+        <p class="contact-hint">We’ll only use this to reply to your message.</p>
+      </div>
+
+      <div class="contact-field">
+        <label for="message" class="contact-label">Short summary (max 100 words)</label>
+        <textarea id="message" name="message" class="contact-textarea" rows="6" required></textarea>
+        <div class="contact-counter"><span id="contactWordCount">0</span>/100 words</div>
+      </div>
+
+      <div class="contact-actions">
+        <button type="submit" class="contact-btn">Send message</button>
+      </div>
+
+      <p id="contactStatus" class="contact-status" role="status" aria-live="polite"></p>
+    </form>
+
+  </div>
+</main>
+
+  <script src="script.js"></script>
+</body>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="/" class="footer-brand" aria-label="Eagle Eye Sports Cards Inc. home">Eagle Eye Sports Cards Inc.</a>
+
+    <nav class="social-links" aria-label="Social media">
+      <a
+        href="/"
+        class="social-link"
+        target="link"
+        rel="instagram link"
+        aria-label="Instagram">
+        <img src="Images/InstaLogo.webp" alt="Instagram" />
+      </a>
+
+      <a href="mailto:eagleeyesportscards@outlook.com" class="email">
+      eagleeyesportscards@outlook.com
+      </a>
+    </nav>
+
+    <small class="footer-copy">
+      © <span id="year"></span> Eagle Eye Sports Cards Inc. All rights reserved.
+    </small>
+  </div>
+</footer>
+
+</html>
