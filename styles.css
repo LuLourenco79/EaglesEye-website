@@ -206,10 +206,11 @@ body {
 
 .page-title {
   font-family: 'Rubik', sans-serif;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  font-weight: 550;
-  width: 33rem;
-  text-align: center;
+  font-size: 2rem;
+  font-weight: 450;
+  width: 27rem;
+  text-align: left;
+  margin-left: 100px;
 }
 
 
@@ -690,14 +691,8 @@ body {
   font-size: 2rem;
   font-weight: 450;
   width: 27rem;
-  text-align: center;
-}
-
-.page-subtitle {
-  text-align: end;
-  margin-top: 0.5rem;               /* mt-2 */
-  font-size: 0.95rem;               /* text-sm to base */
-  color: #6b7280;                   /* slate-500 */
+  text-align: left;
+  margin-left: 200px;
 }
 
 /* Grid of list cards (≈ grid gap-6 md:grid-cols-2 lg:grid-cols-3) */
@@ -723,6 +718,7 @@ body {
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
   overflow: hidden;
 }
+
 .list-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
@@ -832,6 +828,7 @@ body {
   font-weight: 450;
   width: 27rem;
   text-align: left;
+  margin-left: 50px;
   padding-bottom: 30px;
 }
 
@@ -892,3 +889,4 @@ body {
 .faq-link:hover {
   color: #1d4ed8;
 }
+
